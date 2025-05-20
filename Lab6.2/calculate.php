@@ -31,6 +31,6 @@ $result = calculateExpression($x, $y, $z);
   <hr>
   <p><strong>f(x, y, z):</strong> <?php echo round($result, 4); ?></p>
 
-  <br><a href="index.html">← Повернутись назад</a>
+  <br><a href="./index.html">← Повернутись назад</a>
 </body>
 </html>
