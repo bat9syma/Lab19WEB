@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма обчислення</title>
+</head>
+<body>
+  <h2>Форма введення даних</h2>
+  <form action="/api/result.php" method="post">
+    <label>Прізвище:
+      <input type="text" name="lastname" value="Symovych" readonly>
+    </label><br>
+    <label>Ім'я:
+      <input type="text" name="firstname" value="Sasha" readonly>
+    </label><br>
+    <label>Група:
+      <input type="text" name="group" required>
+    </label><br>
+    <label>Номер варіанту:
+      <input type="number" name="variant" min="1" required>
+    </label><br><br>
+    <label>Введіть x:
+      <input type="number" name="x" required>
+    </label><br><br>
+    <label>Введіть y:
+      <input type="number" name="y" required>
+    </label><br><br>
+    <label>Введіть z:
+      <input type="number" name="z" required>
+    </label><br><br>
+    <input type="submit" value="Обчислити">
+  </form>
+</body>
+</html>
