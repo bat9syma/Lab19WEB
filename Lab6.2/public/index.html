@@ -2,33 +2,33 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Форма обчислення</title>
+  <title>Calculation Form</title>
 </head>
 <body>
-  <h2>Форма введення даних</h2>
+  <h2>Data entry Form</h2>
   <form action="/api/result.php" method="post">
-    <label>Прізвище:
+    <label>Surname:
       <input type="text" name="lastname" value="Symovych" readonly>
     </label><br>
-    <label>Ім'я:
+    <label>Name:
       <input type="text" name="firstname" value="Sasha" readonly>
     </label><br>
-    <label>Група:
+    <label>Group:
       <input type="text" name="group" required>
     </label><br>
-    <label>Номер варіанту:
+    <label>Variant:
       <input type="number" name="variant" min="1" required>
     </label><br><br>
-    <label>Введіть x:
+    <label>Enter x:
       <input type="number" name="x" required>
     </label><br><br>
-    <label>Введіть y:
+    <label>Enter y:
       <input type="number" name="y" required>
     </label><br><br>
-    <label>Введіть z:
+    <label>Enter z:
       <input type="number" name="z" required>
     </label><br><br>
-    <input type="submit" value="Обчислити">
+    <input type="submit" value="Calculate">
   </form>
 </body>
 </html>
