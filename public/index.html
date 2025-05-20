@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculation form</title>
+</head>
+<body>
+  <h2>Data entry form</h2>
+  <form action="/api/calculate.php" method="post">
+    <label>Surname: 
+      <input type="text" name="lastname" value="Symovych" readonly>
+    </label><br>
+
+    <label>Name: 
+      <input type="text" name="firstname" value="Sasha" readonly>
+    </label><br>
+
+    <label>Group: 
+      <input type="text" name="group" required>
+    </label><br>
+
+    <label>Variant number: 
+      <input type="number" name="variant" min="1" required>
+    </label><br><br>
+
+    <label>Enter x: 
+      <input type="number" name="x" required>
+    </label><br><br>
+
+    <label>Enter y: 
+      <input type="number" name="y" required>
+    </label><br><br>
+
+    <label>Enter z: 
+      <input type="number" name="z" required>
+    </label><br><br>
+
+    <input type="submit" value="Calculate">
+  </form>
+</body>
+</html>
