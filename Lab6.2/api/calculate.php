@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../includes/fun.php';
+require_once __DIR__ . '/includes/fun.php';
 
 $x = $_POST['x'] ?? 0;
 $y = $_POST['y'] ?? 0;
