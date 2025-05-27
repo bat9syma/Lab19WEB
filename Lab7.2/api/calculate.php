@@ -10,14 +10,14 @@ $x_start = (float)$_POST['x_start'];
 $x_end = (float)$_POST['x_end'];
 
 // Зчитування кроку
-$config = file_get_contents('x_step.txt');
+$config = file_get_contents(__DIR__ . '/../x_step.txt'); 
 preg_match('/x_step\s*=\s*([\d.]+)/', $config, $matches);
 $x_step = isset($matches[1]) ? (float)$matches[1] : 1.0;
 
 $y = $_POST['y'] * $variant;
 $z = $_POST['z'] / $variant;
 
-$file = fopen("symovych.txt", "w");
+$file = fopen(__DIR__ . '/../data/symovych.txt', "w");    
 
 fwrite($file, "Full name: $lastname $firstname\n");
 fwrite($file, "Group: $group\n");
