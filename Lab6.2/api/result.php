@@ -12,6 +12,7 @@ $z = isset($_POST['z']) ? (float)$_POST['z'] : 0;
 $result = calculateExpression($x, $y, $z);
 ?>
 
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
